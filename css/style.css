@@ -1,0 +1,246 @@
+/* BARRA DE NAVEGAÇÃO */   /* BARRA DE NAVEGAÇÃO */  /* BARRA DE NAVEGAÇÃO */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  border-bottom: 1px solid #E2E8F0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+  background: #1b1b1b;
+  height: 80px;
+  width: 100%;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  z-index: 9;
+}
+
+.nav-item {
+  margin: 0 5px;
+  
+}
+
+.nav-link{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover{
+  color: #111;
+  background: #fff;
+}
+
+.nav-logo {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+/* MEDIA QUERIES NAVBAR */
+
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+      position: absolute;
+      left: -100%;
+      top: 5rem;
+      flex-direction: column;
+      background-color: rgb(8, 8, 8);
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow:
+          0 10px 27px rgba(0, 0, 0, 0.05);
+          display: block;
+  }
+
+  .nav-menu.active {
+      left: 0;
+  }
+
+  .nav-item {
+      margin: 2.5rem 0;
+  }
+
+  .hamburger {
+      color: #fff;
+      display:block;
+      cursor: pointer;
+      font-size: 22px;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+      -webkit-transform: translateY(8px) rotate(45deg);
+      transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+      -webkit-transform: translateY(-8px) rotate(-45deg);
+      transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+
+
+
+/* FIM DA BARRA DE NAVEGAÇÃO */   /* FIM DA BARRA DE NAVEGAÇÃO */  /* FIM DA BARRA DE NAVEGAÇÃO */
+
+/* CSS DO SOBRE NÓS */ /* CSS DO SOBRE NÓS */ /* CSS DO SOBRE NÓS */
+
+ 
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+#about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.nossotime {
+    padding-top: 25px;
+}
+
+/* FIM DO SOBRE NÓS */ /* FIM DO SOBRE NÓS */ /* FIM DO SOBRE NÓS */
+
+/* GUIA SERVIÇOS */ /* GUIA SERVIÇOS */ /* GUIA SERVIÇOS */
+#servicos {
+    background-color: #474e5d;
+    color: white;
+}.carservice {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+
+.col-lg-4 {
+  padding-top: 30px;
+}
+
+.col-lg-6 {
+  padding-top: 30px;
+}
+/* FIM DA GUIA SERVIÇOS */ /* FIM DA GUIA SERVIÇOS */ /* FIM DA GUIA SERVIÇOS */
+
+ 
+  /* CONTATO FOOTER*/  /* FIM DO CONTATO FOOTER*/
+.contato {
+  display: inline-block;
+}
+
+
+.quem-somos{
+  background-color: gray;
+  color: white;
+
+}
+
+.margin{
+  padding-bottom: 50px;
+  padding-top: 10px;
+}
+
+#parceiros{
+  background-color: brown;
+  color: white;
+
+}
+
+.bg-footer {
+  background-color: rgb(146, 135, 135);
+  color: rgb(226, 213, 213);
+}
+
+  /* FIM DO CONTATO FOOTER*/   /* FIM DO CONTATO FOOTER*/
