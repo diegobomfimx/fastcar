@@ -1,0 +1,29 @@
+@media screen and (max-width: 767px) {
+
+    .carservice {
+        height: 300px !important;
+        width: 400px;
+    }
+
+}
+
+
+@media screen and (max-width: 439px) {
+
+    .carservice {
+        height: 250px !important;
+        width: 350px;
+    }
+
+}
+
+
+@media screen and (max-width: 383px) {
+
+    .carservice {
+        height: 210px !important;
+        width: 310px;
+    }
+
+}
+

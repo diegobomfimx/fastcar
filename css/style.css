@@ -140,6 +140,11 @@ a {
   padding: 0 8px;
 }
 
+.card img {
+  object-fit: cover;
+  height: 500px;
+}
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 8px;
@@ -243,4 +248,35 @@ a {
   color: rgb(226, 213, 213);
 }
 
+
+
+footer .contatos {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+
+  background-color: rgb(5, 5, 56);
+  margin-left: -20px !important;
+  padding-top: 20px;
+
+  font-family: 'Poopins', sans-serif;
+  color: #AAA;
+}
+
+footer ul {
+  list-style: none;
+  display:flex;
+  padding-top: 10px;
+}
+
+footer .contato {
+  justify-content: space-between;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.icons:hover {
+  transform: scale(1.2);
+  transition: .3s ease all;
+}
   /* FIM DO CONTATO FOOTER*/   /* FIM DO CONTATO FOOTER*/
